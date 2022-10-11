@@ -1,0 +1,384 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:  hsla(233, 100%, 69%, 15%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container{
+    max-width: 370px;
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 7rem 1.5rem 3rem 1.5rem;
+    line-height: 1.3;
+}
+
+.header-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+}
+
+h1, h2, h4, h6{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 32px;
+}
+
+.para{
+    text-align: center;
+    opacity: 50%;
+    font-size: 15px;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 40px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+.ios:hover, .mac:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.ios{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 10px 10px 30px -10px hsl(171, 66%, 44%);
+}
+
+.mac{
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 10px 10px 30px -10px hsl(233, 100%, 69%);
+    margin-bottom: 200px;
+}
+
+.section1 img{
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 3.5rem;
+}
+
+h3{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.h3-para{
+    text-align: center;
+    opacity: 50%;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    margin-bottom: 4rem;
+}
+
+.second-h2{
+    margin-top: 12rem;
+}
+
+.tablet-img{
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 10rem;
+}
+
+.sixth-section img{
+    display: block;
+    margin: 4rem auto;
+}
+
+h5{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.h5-para{
+    text-align: center;
+    opacity: 50%;
+    line-height: 1.5;
+}
+
+.last-section{
+    margin-top: 8rem;
+}
+
+.last-section img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    width: 8rem;
+}
+
+h6{
+    margin-top: 10rem;
+}
+
+footer{
+    background-color: hsla(201, 11%, 66%, 30%);
+    width: 370px;
+}
+
+.main-content{
+    margin-bottom: 13rem;
+}
+
+.footer-logo{
+    width: 3rem;
+    display: block;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+span{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+span:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+.social-logo-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.social-logo-div img{
+    position: relative;
+}
+
+.social-logo-div img:hover{
+    background-color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+
+.social-logo-div img:nth-of-type(1){
+    left: -40px;
+}
+
+.social-logo-div img:nth-of-type(2){
+    left: 0px;
+}
+
+.social-logo-div img:nth-of-type(3){
+    left: 40px;
+}
+
+@media screen and (min-width:760px) {
+    .container{
+        max-width: 1400px;
+        background-image: url(./images/bg-header-desktop.png);
+        padding: 4rem 8rem;
+        padding-bottom: 0;
+    }
+
+    .btn-div{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        width: 15rem;
+    }
+
+    .btn:first-of-type{
+        margin-right: 2rem;
+    }
+
+    .header-logo{
+        margin-bottom: 2rem;
+    }
+
+    .mac{
+        margin-bottom: 7rem;
+    }
+
+    .section1{
+        display: flex;
+        margin-top: 3rem;
+    }
+
+    .section1 img{
+        width: 30rem;
+        height: 20rem;
+        position: relative;
+        left: -180px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .info{
+        margin-left: -8rem;
+        width: 100%;
+    }
+
+    h3{
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .h3-para{
+        font-size: 14px;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .second-h2{
+        margin-top: 3rem;
+    }
+
+    .tablet-img{
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .sixth-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+
+    .div1{
+        padding: 1rem;
+    }
+
+    .last-section{
+        margin-top: 5rem;
+        padding: 0;
+        display: flex;
+    }
+
+    .last-section img{
+        width: 4rem;
+    }
+
+    h6{
+        margin-top: 3rem;
+    }
+
+    .main-content{
+        margin-bottom: 0;
+    }
+
+    footer{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    .span-divs{
+        position: relative;
+        left: -11rem;
+        width: 25rem;
+        display: grid;
+        grid-template-columns:10rem 10rem 10rem;
+        row-gap: 10px;
+    }
+
+    span{
+        display: inline-block;
+        text-align: left;
+        margin-top: 0rem;
+        margin-left: 3rem;
+        font-size: 12px;
+    }
+
+    span:first-of-type{
+        padding-right: 2rem;
+    }
+
+    .footer-logo{
+        position: relative;
+        left: -4rem;
+        top: -1rem;
+        height: 3rem;
+    }
+
+    .social-logo-div{
+        position: relative;
+        left: -3rem;
+    }
+
+    .social-logo-div img:nth-of-type(1){
+        left: -15px;
+    }
+    
+    .social-logo-div img:nth-of-type(2){
+        left: 0px;
+    }
+    
+    .social-logo-div img:nth-of-type(3){
+        left: 15px;
+    }
+
+
+}
+
+@media screen and (min-width:1000px) {
+    .container{
+        padding: 4rem 12rem;
+        padding-bottom: 0;
+    }
+
+    .info{
+        margin-left: -5rem;
+    }
+
+    .tablet-img{
+        width: 50%;
+        margin-bottom: 5rem;
+    }
+
+    .second-h2{
+        margin-top: 5rem;
+    }
+
+    .last-section img{
+        width: 6rem;
+    }
+
+    .footer-logo{
+        left: -15rem;
+    }
+
+    .span-divs{
+        left: -30rem;
+    }
+
+    .social-logo-div{
+        left: -6rem;
+    }
+}
